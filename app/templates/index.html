@@ -9,6 +9,8 @@
     <title>Calendar | 🗓️</title>
     <style>
         body {
+            background-color: #111213;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,10 +27,18 @@
         .calendar {
             color: rgb(146, 146, 226);
         }
+        .docs > a {
+            color: rgb(159, 226, 146);
+            transition: 0.4s all ease-in;
+        }
+        .docs > a:hover {
+            color: rgb(135, 245, 113)
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, <span class="creator">Creator</span></h1>
+    <h1>Hello, <span class="creator">Creator</span>.</h1>
     <h2>This is productive <span class="calendar">calendar</span>!</h2>
+    <h2>Maybe we will go to the <span class="docs"><a href="http://127.0.0.1:8000/docs">docs</a></span>?</h2>
 </body>
 </html>
