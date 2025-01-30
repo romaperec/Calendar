@@ -78,4 +78,4 @@ async def delete_event(event_id: int, db: AsyncSession = Depends(get_session)):
     await db.delete(event)
     await db.commit()
 
-    return {"message": "success", "deleted_note": event}
+    return {"message": "successfully", "deleted_note": event}
