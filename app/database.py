@@ -5,7 +5,7 @@ from sqlalchemy import String, Integer, Text
 
 from datetime import time as timeout
 
-engine = create_async_engine("sqlite+aiosqlite:///main.db")
+engine = create_async_engine("sqlite+aiosqlite:///fixweek.db")
 session = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
 

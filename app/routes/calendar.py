@@ -6,7 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 
 
-router = APIRouter(prefix="/calendar", tags=["Calendar 📅"])
+router = APIRouter(prefix="/calendar", tags=["calendar 🗓️"])
 
 
 async def get_session():
