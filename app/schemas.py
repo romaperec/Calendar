@@ -1,8 +1,13 @@
-from typing import Annotated
-from pydantic import BaseModel, Field
-from datetime import time
+from pydantic import BaseModel
+from datetime import time as timeout
 
 class CalendarAddSchema(BaseModel):
     day_name: str
-    time: time
+    time: timeout
     description: str
+
+
+class CalendarUpdateSchema(BaseModel):
+    day_name: str | None = None
+    time: timeout | None = None
+    description: str | None = None
